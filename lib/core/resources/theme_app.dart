@@ -34,10 +34,6 @@ ThemeData lightTheme() {
           selectedIconTheme:
               const IconThemeData(color: AppColors.primaryColorLight),
           unselectedIconTheme: IconThemeData(color: AppColors.iconColorLight)),
-      cardTheme: CardTheme(
-        elevation: 6.5,
-        shadowColor: Colors.black.withOpacity(.5),
-      ),
       inputDecorationTheme: const InputDecorationTheme(
         enabledBorder: OutlineInputBorder(
             borderSide: BorderSide(color: AppColors.colorGray, width: 1.5),
@@ -87,6 +83,6 @@ ThemeData darkTheme() {
       selectedIconTheme: const IconThemeData(color: AppColors.primaryColorDark),
       unselectedIconTheme: IconThemeData(color: AppColors.iconColorDark),
     ),
-    cardTheme: const CardTheme(elevation: 0),
+    cardTheme: const CardThemeData(elevation: 0),
   );
 }
